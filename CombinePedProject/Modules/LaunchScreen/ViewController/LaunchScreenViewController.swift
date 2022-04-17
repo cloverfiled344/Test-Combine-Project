@@ -50,6 +50,8 @@ private extension LaunchScreenViewController {
     }
     
     func setupViewBindings() {
-        
+        launchScreenView.continueButtonTapped.sink { [weak self] _ in
+            self?.coordinator?.openWelcomeScreen()
+        }.store(in: &anyCancellable)
     }
 }

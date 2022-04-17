@@ -10,8 +10,8 @@ class LaunchScreenCoordinator: Coordinator {
     
     // MARK: - Builders
     private let imageBuilder = ImageViewBuilder()
+    private let buttonBuilder = ButtonBuilder()
     private let labelBuilder = LabelBuilder()
-    
     
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
@@ -21,11 +21,17 @@ class LaunchScreenCoordinator: Coordinator {
     }
     
     func start() {
-        let lauchScreenVC = LaunchScreenViewController(.init(imageBuilder, labelBuilder))
+        let lauchScreenVC = LaunchScreenViewController(.init(imageBuilder, buttonBuilder))
         lauchScreenVC.coordinator = self
         navigationController.pushViewController(lauchScreenVC, animated: false)
         let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate
         sceneDelegate?.window?.rootViewController = navigationController
         sceneDelegate?.window?.makeKeyAndVisible()
+    }
+    
+    func openWelcomeScreen() {
+        let vc = UIViewController()
+        vc.view.backgroundColor = .green
+        navigationController.pushViewController(vc, animated: true)
     }
 }

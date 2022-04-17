@@ -40,9 +40,11 @@
 		FAFF2B93280AF51D00D24393 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = FAFF2B92280AF51D00D24393 /* swiftgen.yml */; };
 		FAFF2B97280AF5F900D24393 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAFF2B96280AF5F900D24393 /* Localizable.strings */; };
 		FAFF2B99280AF69500D24393 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2B98280AF69500D24393 /* Localizable.swift */; };
-		FAFF2B9B280AF69B00D24393 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2B9A280AF69B00D24393 /* Assets.swift */; };
 		FAFF2B9E280AF6AD00D24393 /* Plist.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2B9D280AF6AD00D24393 /* Plist.swift */; };
 		FAFF2BA2280C17A500D24393 /* LaunchScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2BA1280C17A500D24393 /* LaunchScreenViewModel.swift */; };
+		FAFF2BAD280C3EC900D24393 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2BAC280C3EC900D24393 /* Colors.swift */; };
+		FAFF2BAF280C3ED300D24393 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2BAE280C3ED300D24393 /* Assets.swift */; };
+		FAFF2BB1280C3FF700D24393 /* Colors.txt in Resources */ = {isa = PBXBuildFile; fileRef = FAFF2BB0280C3FF700D24393 /* Colors.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,9 +85,11 @@
 		FAFF2B92280AF51D00D24393 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		FAFF2B96280AF5F900D24393 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		FAFF2B98280AF69500D24393 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
-		FAFF2B9A280AF69B00D24393 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		FAFF2B9D280AF6AD00D24393 /* Plist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plist.swift; sourceTree = "<group>"; };
 		FAFF2BA1280C17A500D24393 /* LaunchScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewModel.swift; sourceTree = "<group>"; };
+		FAFF2BAC280C3EC900D24393 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		FAFF2BAE280C3ED300D24393 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		FAFF2BB0280C3FF700D24393 /* Colors.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Colors.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +179,7 @@
 		FAF9E8C62805D58600C0D356 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FAFF2BA5280C3C8300D24393 /* Colors */,
 				FAFF2B9C280AF6A700D24393 /* Plists */,
 				FAFF2B95280AF5D300D24393 /* Strings */,
 				FAFF2B94280AF5CC00D24393 /* Assets */,
@@ -387,8 +392,8 @@
 		FAFF2B94280AF5CC00D24393 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				FAFF2B9A280AF69B00D24393 /* Assets.swift */,
 				FAF9E8B92805D25200C0D356 /* Assets.xcassets */,
+				FAFF2BAE280C3ED300D24393 /* Assets.swift */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -408,6 +413,15 @@
 				FAFF2B9D280AF6AD00D24393 /* Plist.swift */,
 			);
 			path = Plists;
+			sourceTree = "<group>";
+		};
+		FAFF2BA5280C3C8300D24393 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				FAFF2BAC280C3EC900D24393 /* Colors.swift */,
+				FAFF2BB0280C3FF700D24393 /* Colors.txt */,
+			);
+			path = Colors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -474,6 +488,7 @@
 				FAF9E8BA2805D25200C0D356 /* Assets.xcassets in Resources */,
 				FAFF2B97280AF5F900D24393 /* Localizable.strings in Resources */,
 				FAF9E8C82805D62F00C0D356 /* LaunchScreen.storyboard in Resources */,
+				FAFF2BB1280C3FF700D24393 /* Colors.txt in Resources */,
 				FAFF2B93280AF51D00D24393 /* swiftgen.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -550,6 +565,7 @@
 				FAF9E8F92806EAF200C0D356 /* StackViewBuilder.swift in Sources */,
 				FAF9E8FE2806EBF800C0D356 /* LabelBuilderType.swift in Sources */,
 				FAF9E9012806ED2100C0D356 /* LocalStoreManager.swift in Sources */,
+				FAFF2BAD280C3EC900D24393 /* Colors.swift in Sources */,
 				FAFF2BA2280C17A500D24393 /* LaunchScreenViewModel.swift in Sources */,
 				FAF9E8F12806D7C100C0D356 /* TextFieldBuilderType.swift in Sources */,
 				FAF9E8EF2806D79800C0D356 /* TextFieldBuilder.swift in Sources */,
@@ -558,7 +574,6 @@
 				FAF9E8D32805DB7300C0D356 /* TableBuilder.swift in Sources */,
 				FAF9E8CD2805D6C300C0D356 /* Coordinator.swift in Sources */,
 				FAF9E8CA2805D69900C0D356 /* AppCoordinator.swift in Sources */,
-				FAFF2B9B280AF69B00D24393 /* Assets.swift in Sources */,
 				FAF9E8B12805D24F00C0D356 /* AppDelegate.swift in Sources */,
 				FAF9E8DD2806C64D00C0D356 /* ImageViewBuilder.swift in Sources */,
 				FAF9E9102806F7B600C0D356 /* BaseViewController.swift in Sources */,
@@ -571,6 +586,7 @@
 				FAF9E8E82806CA8F00C0D356 /* ButtonBuilderType.swift in Sources */,
 				FAF9E8F72806EAC400C0D356 /* StackViewBuilderType.swift in Sources */,
 				FAFF2B99280AF69500D24393 /* Localizable.swift in Sources */,
+				FAFF2BAF280C3ED300D24393 /* Assets.swift in Sources */,
 				FAF9E8E02806C77E00C0D356 /* UIView+Extension.swift in Sources */,
 				FAF9E8B32805D24F00C0D356 /* SceneDelegate.swift in Sources */,
 				FAF9E8E32806C91600C0D356 /* ViewBuilder.swift in Sources */,

@@ -3,7 +3,13 @@ xcassets:
   outputs:
     - templateName: swift5
       output: CombinePedProject/Resources/Assets/Assets.swift
-
+          
+colors:
+  inputs: CombinePedProject/Resources/Colors/Colors.txt
+  outputs:
+    - templateName: swift5
+      output: CombinePedProject/Resources/Colors/Colors.swift
+  
 #fonts:
 #    inputs: CombinePedProject/Resources/Fonts
 #    outputs:

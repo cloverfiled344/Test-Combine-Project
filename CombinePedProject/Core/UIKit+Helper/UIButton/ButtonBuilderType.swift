@@ -22,4 +22,5 @@ protocol ButtonBuilderType {
     func setTitleWithLeftImage(_ title: String?, _ image: UIImage?, _ spacing: CGFloat) -> Self
     func setNumberOfLines(_ number: Int) -> Self
     func setAlignment(_ alignment: NSTextAlignment) -> Self
+    func setPulsate() -> Self
 }

@@ -92,4 +92,9 @@ class ButtonBuilder: ButtonBuilderType {
         button.titleLabel?.textAlignment = alignment
         return self
     }
+    
+    func setPulsate() -> Self {
+        button.pulsate()
+        return self
+    }
 }
