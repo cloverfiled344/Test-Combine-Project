@@ -1,0 +1,25 @@
+xcassets:
+  inputs: CombinePedProject/Resources/Assets/Assets.xcassets
+  outputs:
+    - templateName: swift5
+      output: CombinePedProject/Resources/Assets/Assets.swift
+
+#fonts:
+#    inputs: CombinePedProject/Resources/Fonts
+#    outputs:
+#        templateName: swift5
+#        output: CombinePedProject/Resources/Fonts/Fonts.swift
+
+strings:
+  inputs: CombinePedProject/Resources/Strings/Localizable.strings
+  outputs:
+    - templateName: structured-swift5
+      output: CombinePedProject/Resources/Strings/Localizable.swift
+
+plist:
+  inputs: CombinePedProject
+  outputs:
+    templateName: runtime-swift5
+    output: CombinePedProject/Resources/Plists/Plist.swift
+
+

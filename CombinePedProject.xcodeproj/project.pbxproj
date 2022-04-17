@@ -7,23 +7,85 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87EB1B763780FA175B4D5EE1 /* Pods_CombinePedProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3609D0D845A68EE2B2EC984F /* Pods_CombinePedProject.framework */; };
 		FAF9E8B12805D24F00C0D356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E8B02805D24F00C0D356 /* AppDelegate.swift */; };
 		FAF9E8B32805D24F00C0D356 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E8B22805D24F00C0D356 /* SceneDelegate.swift */; };
-		FAF9E8B52805D24F00C0D356 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E8B42805D24F00C0D356 /* ViewController.swift */; };
-		FAF9E8B82805D24F00C0D356 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF9E8B62805D24F00C0D356 /* Main.storyboard */; };
 		FAF9E8BA2805D25200C0D356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF9E8B92805D25200C0D356 /* Assets.xcassets */; };
-		FAF9E8BD2805D25200C0D356 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF9E8BB2805D25200C0D356 /* LaunchScreen.storyboard */; };
+		FAF9E8C82805D62F00C0D356 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF9E8C72805D62F00C0D356 /* LaunchScreen.storyboard */; };
+		FAF9E8CA2805D69900C0D356 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E8C92805D69900C0D356 /* AppCoordinator.swift */; };
+		FAF9E8CD2805D6C300C0D356 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E8CC2805D6C300C0D356 /* Coordinator.swift */; };
+		FAF9E8D12805D7E900C0D356 /* TableBuilderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E8D02805D7E900C0D356 /* TableBuilderType.swift */; };
+		FAF9E8D32805DB7300C0D356 /* TableBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E8D22805DB7300C0D356 /* TableBuilder.swift */; };
+		FAF9E8D82805DDFD00C0D356 /* ProjectRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E8D72805DDFD00C0D356 /* ProjectRefreshControl.swift */; };
+		FAF9E8DB2806C4F200C0D356 /* ImageViewBuilderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E8DA2806C4F200C0D356 /* ImageViewBuilderType.swift */; };
+		FAF9E8DD2806C64D00C0D356 /* ImageViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E8DC2806C64D00C0D356 /* ImageViewBuilder.swift */; };
+		FAF9E8E02806C77E00C0D356 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E8DF2806C77D00C0D356 /* UIView+Extension.swift */; };
+		FAF9E8E32806C91600C0D356 /* ViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E8E22806C91600C0D356 /* ViewBuilder.swift */; };
+		FAF9E8E52806C92A00C0D356 /* ViewBuilderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E8E42806C92A00C0D356 /* ViewBuilderType.swift */; };
+		FAF9E8E82806CA8F00C0D356 /* ButtonBuilderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E8E72806CA8F00C0D356 /* ButtonBuilderType.swift */; };
+		FAF9E8EA2806CBEA00C0D356 /* ButtonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E8E92806CBEA00C0D356 /* ButtonBuilder.swift */; };
+		FAF9E8EC2806D5B900C0D356 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E8EB2806D5B900C0D356 /* UIButton+Extension.swift */; };
+		FAF9E8EF2806D79800C0D356 /* TextFieldBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E8EE2806D79800C0D356 /* TextFieldBuilder.swift */; };
+		FAF9E8F12806D7C100C0D356 /* TextFieldBuilderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E8F02806D7C100C0D356 /* TextFieldBuilderType.swift */; };
+		FAF9E8F32806D7F100C0D356 /* ProjectTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E8F22806D7F100C0D356 /* ProjectTextField.swift */; };
+		FAF9E8F72806EAC400C0D356 /* StackViewBuilderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E8F62806EAC400C0D356 /* StackViewBuilderType.swift */; };
+		FAF9E8F92806EAF200C0D356 /* StackViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E8F82806EAF200C0D356 /* StackViewBuilder.swift */; };
+		FAF9E8FC2806EBED00C0D356 /* LabelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E8FB2806EBED00C0D356 /* LabelBuilder.swift */; };
+		FAF9E8FE2806EBF800C0D356 /* LabelBuilderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E8FD2806EBF800C0D356 /* LabelBuilderType.swift */; };
+		FAF9E9012806ED2100C0D356 /* LocalStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E9002806ED2100C0D356 /* LocalStoreManager.swift */; };
+		FAF9E90A2806F71E00C0D356 /* LaunchScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E9092806F71E00C0D356 /* LaunchScreenCoordinator.swift */; };
+		FAF9E90C2806F75A00C0D356 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E90B2806F75A00C0D356 /* LaunchScreenViewController.swift */; };
+		FAF9E9102806F7B600C0D356 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E90F2806F7B600C0D356 /* BaseViewController.swift */; };
+		FAFF2B91280AF41800D24393 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2B90280AF41800D24393 /* LaunchScreenView.swift */; };
+		FAFF2B93280AF51D00D24393 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = FAFF2B92280AF51D00D24393 /* swiftgen.yml */; };
+		FAFF2B97280AF5F900D24393 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAFF2B96280AF5F900D24393 /* Localizable.strings */; };
+		FAFF2B99280AF69500D24393 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2B98280AF69500D24393 /* Localizable.swift */; };
+		FAFF2B9B280AF69B00D24393 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2B9A280AF69B00D24393 /* Assets.swift */; };
+		FAFF2B9E280AF6AD00D24393 /* Plist.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2B9D280AF6AD00D24393 /* Plist.swift */; };
+		FAFF2BA2280C17A500D24393 /* LaunchScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2BA1280C17A500D24393 /* LaunchScreenViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3609D0D845A68EE2B2EC984F /* Pods_CombinePedProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CombinePedProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		901A11F82AC263909F45A4BC /* Pods-CombinePedProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombinePedProject.debug.xcconfig"; path = "Target Support Files/Pods-CombinePedProject/Pods-CombinePedProject.debug.xcconfig"; sourceTree = "<group>"; };
+		D0D81A013033FF7676CE9FD7 /* Pods-CombinePedProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombinePedProject.release.xcconfig"; path = "Target Support Files/Pods-CombinePedProject/Pods-CombinePedProject.release.xcconfig"; sourceTree = "<group>"; };
 		FAF9E8AD2805D24F00C0D356 /* CombinePedProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombinePedProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF9E8B02805D24F00C0D356 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAF9E8B22805D24F00C0D356 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAF9E8B42805D24F00C0D356 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FAF9E8B72805D24F00C0D356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAF9E8B92805D25200C0D356 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FAF9E8BC2805D25200C0D356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAF9E8BE2805D25200C0D356 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF9E8C72805D62F00C0D356 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAF9E8C92805D69900C0D356 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		FAF9E8CC2805D6C300C0D356 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		FAF9E8D02805D7E900C0D356 /* TableBuilderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableBuilderType.swift; sourceTree = "<group>"; };
+		FAF9E8D22805DB7300C0D356 /* TableBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableBuilder.swift; sourceTree = "<group>"; };
+		FAF9E8D72805DDFD00C0D356 /* ProjectRefreshControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectRefreshControl.swift; sourceTree = "<group>"; };
+		FAF9E8DA2806C4F200C0D356 /* ImageViewBuilderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewBuilderType.swift; sourceTree = "<group>"; };
+		FAF9E8DC2806C64D00C0D356 /* ImageViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewBuilder.swift; sourceTree = "<group>"; };
+		FAF9E8DF2806C77D00C0D356 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		FAF9E8E22806C91600C0D356 /* ViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilder.swift; sourceTree = "<group>"; };
+		FAF9E8E42806C92A00C0D356 /* ViewBuilderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilderType.swift; sourceTree = "<group>"; };
+		FAF9E8E72806CA8F00C0D356 /* ButtonBuilderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBuilderType.swift; sourceTree = "<group>"; };
+		FAF9E8E92806CBEA00C0D356 /* ButtonBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBuilder.swift; sourceTree = "<group>"; };
+		FAF9E8EB2806D5B900C0D356 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		FAF9E8EE2806D79800C0D356 /* TextFieldBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldBuilder.swift; sourceTree = "<group>"; };
+		FAF9E8F02806D7C100C0D356 /* TextFieldBuilderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldBuilderType.swift; sourceTree = "<group>"; };
+		FAF9E8F22806D7F100C0D356 /* ProjectTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTextField.swift; sourceTree = "<group>"; };
+		FAF9E8F62806EAC400C0D356 /* StackViewBuilderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewBuilderType.swift; sourceTree = "<group>"; };
+		FAF9E8F82806EAF200C0D356 /* StackViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewBuilder.swift; sourceTree = "<group>"; };
+		FAF9E8FB2806EBED00C0D356 /* LabelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelBuilder.swift; sourceTree = "<group>"; };
+		FAF9E8FD2806EBF800C0D356 /* LabelBuilderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelBuilderType.swift; sourceTree = "<group>"; };
+		FAF9E9002806ED2100C0D356 /* LocalStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStoreManager.swift; sourceTree = "<group>"; };
+		FAF9E9092806F71E00C0D356 /* LaunchScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenCoordinator.swift; sourceTree = "<group>"; };
+		FAF9E90B2806F75A00C0D356 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		FAF9E90F2806F7B600C0D356 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FAFF2B90280AF41800D24393 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
+		FAFF2B92280AF51D00D24393 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		FAFF2B96280AF5F900D24393 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		FAFF2B98280AF69500D24393 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		FAFF2B9A280AF69B00D24393 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		FAFF2B9D280AF6AD00D24393 /* Plist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plist.swift; sourceTree = "<group>"; };
+		FAFF2BA1280C17A500D24393 /* LaunchScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +93,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87EB1B763780FA175B4D5EE1 /* Pods_CombinePedProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4BCB94BEEFC16DE102FA7D40 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				901A11F82AC263909F45A4BC /* Pods-CombinePedProject.debug.xcconfig */,
+				D0D81A013033FF7676CE9FD7 /* Pods-CombinePedProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6B39A29DCE4C45ECC2C649D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3609D0D845A68EE2B2EC984F /* Pods_CombinePedProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FAF9E8A42805D24F00C0D356 = {
 			isa = PBXGroup;
 			children = (
+				FAFF2B92280AF51D00D24393 /* swiftgen.yml */,
 				FAF9E8AF2805D24F00C0D356 /* CombinePedProject */,
 				FAF9E8AE2805D24F00C0D356 /* Products */,
+				4BCB94BEEFC16DE102FA7D40 /* Pods */,
+				6B39A29DCE4C45ECC2C649D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +139,275 @@
 		FAF9E8AF2805D24F00C0D356 /* CombinePedProject */ = {
 			isa = PBXGroup;
 			children = (
-				FAF9E8B02805D24F00C0D356 /* AppDelegate.swift */,
-				FAF9E8B22805D24F00C0D356 /* SceneDelegate.swift */,
-				FAF9E8B42805D24F00C0D356 /* ViewController.swift */,
-				FAF9E8B62805D24F00C0D356 /* Main.storyboard */,
-				FAF9E8B92805D25200C0D356 /* Assets.xcassets */,
-				FAF9E8BB2805D25200C0D356 /* LaunchScreen.storyboard */,
+				FAF9E8C42805D48F00C0D356 /* App */,
+				FAF9E8C52805D57900C0D356 /* Core */,
+				FAF9E9032806F6D700C0D356 /* Models */,
+				FAF9E9022806F6CC00C0D356 /* Modules */,
+				FAF9E8C62805D58600C0D356 /* Resources */,
 				FAF9E8BE2805D25200C0D356 /* Info.plist */,
 			);
 			path = CombinePedProject;
+			sourceTree = "<group>";
+		};
+		FAF9E8C42805D48F00C0D356 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9E8B02805D24F00C0D356 /* AppDelegate.swift */,
+				FAF9E8B22805D24F00C0D356 /* SceneDelegate.swift */,
+				FAF9E8C92805D69900C0D356 /* AppCoordinator.swift */,
+				FAF9E8C72805D62F00C0D356 /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FAF9E8C52805D57900C0D356 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9E8FF2806ED0C00C0D356 /* Managers */,
+				FAF9E8D52805DDD800C0D356 /* UI */,
+				FAF9E8CE2805D78900C0D356 /* UIKit+Helper */,
+				FAF9E8CB2805D6B400C0D356 /* Coordinator */,
+				FAF9E8DE2806C73500C0D356 /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FAF9E8C62805D58600C0D356 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAFF2B9C280AF6A700D24393 /* Plists */,
+				FAFF2B95280AF5D300D24393 /* Strings */,
+				FAFF2B94280AF5CC00D24393 /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FAF9E8CB2805D6B400C0D356 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9E8CC2805D6C300C0D356 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		FAF9E8CE2805D78900C0D356 /* UIKit+Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9E8FA2806EBDD00C0D356 /* UILabel */,
+				FAF9E8F52806EAAF00C0D356 /* UIStackView */,
+				FAF9E8ED2806D78800C0D356 /* UITextField */,
+				FAF9E8E62806CA7800C0D356 /* UIButton */,
+				FAF9E8D92806C4D000C0D356 /* UIImageView */,
+				FAF9E8E12806C90900C0D356 /* UIView */,
+				FAF9E8CF2805D7AA00C0D356 /* UITableView */,
+			);
+			path = "UIKit+Helper";
+			sourceTree = "<group>";
+		};
+		FAF9E8CF2805D7AA00C0D356 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9E8D02805D7E900C0D356 /* TableBuilderType.swift */,
+				FAF9E8D22805DB7300C0D356 /* TableBuilder.swift */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		FAF9E8D52805DDD800C0D356 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9E8D62805DDE000C0D356 /* ProjectRefreshControl */,
+				FAF9E8F42806D7F700C0D356 /* ProjectTextField */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FAF9E8D62805DDE000C0D356 /* ProjectRefreshControl */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9E8D72805DDFD00C0D356 /* ProjectRefreshControl.swift */,
+			);
+			path = ProjectRefreshControl;
+			sourceTree = "<group>";
+		};
+		FAF9E8D92806C4D000C0D356 /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9E8DA2806C4F200C0D356 /* ImageViewBuilderType.swift */,
+				FAF9E8DC2806C64D00C0D356 /* ImageViewBuilder.swift */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		FAF9E8DE2806C73500C0D356 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9E90E2806F7AA00C0D356 /* Base */,
+				FAF9E90D2806F7A000C0D356 /* UI+Extensions */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FAF9E8E12806C90900C0D356 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9E8E42806C92A00C0D356 /* ViewBuilderType.swift */,
+				FAF9E8E22806C91600C0D356 /* ViewBuilder.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		FAF9E8E62806CA7800C0D356 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9E8E72806CA8F00C0D356 /* ButtonBuilderType.swift */,
+				FAF9E8E92806CBEA00C0D356 /* ButtonBuilder.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		FAF9E8ED2806D78800C0D356 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9E8F02806D7C100C0D356 /* TextFieldBuilderType.swift */,
+				FAF9E8EE2806D79800C0D356 /* TextFieldBuilder.swift */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		FAF9E8F42806D7F700C0D356 /* ProjectTextField */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9E8F22806D7F100C0D356 /* ProjectTextField.swift */,
+			);
+			path = ProjectTextField;
+			sourceTree = "<group>";
+		};
+		FAF9E8F52806EAAF00C0D356 /* UIStackView */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9E8F62806EAC400C0D356 /* StackViewBuilderType.swift */,
+				FAF9E8F82806EAF200C0D356 /* StackViewBuilder.swift */,
+			);
+			path = UIStackView;
+			sourceTree = "<group>";
+		};
+		FAF9E8FA2806EBDD00C0D356 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9E8FD2806EBF800C0D356 /* LabelBuilderType.swift */,
+				FAF9E8FB2806EBED00C0D356 /* LabelBuilder.swift */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		FAF9E8FF2806ED0C00C0D356 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9E9002806ED2100C0D356 /* LocalStoreManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FAF9E9022806F6CC00C0D356 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9E9042806F6E000C0D356 /* LaunchScreen */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FAF9E9032806F6D700C0D356 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAF9E9042806F6E000C0D356 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9E9082806F70E00C0D356 /* Coordinator */,
+				FAF9E9072806F70700C0D356 /* ViewModel */,
+				FAF9E9062806F70300C0D356 /* View */,
+				FAF9E9052806F6FC00C0D356 /* ViewController */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		FAF9E9052806F6FC00C0D356 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9E90B2806F75A00C0D356 /* LaunchScreenViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FAF9E9062806F70300C0D356 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAFF2B90280AF41800D24393 /* LaunchScreenView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAF9E9072806F70700C0D356 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FAFF2BA1280C17A500D24393 /* LaunchScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FAF9E9082806F70E00C0D356 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9E9092806F71E00C0D356 /* LaunchScreenCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		FAF9E90D2806F7A000C0D356 /* UI+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9E8DF2806C77D00C0D356 /* UIView+Extension.swift */,
+				FAF9E8EB2806D5B900C0D356 /* UIButton+Extension.swift */,
+			);
+			path = "UI+Extensions";
+			sourceTree = "<group>";
+		};
+		FAF9E90E2806F7AA00C0D356 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9E90F2806F7B600C0D356 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		FAFF2B94280AF5CC00D24393 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FAFF2B9A280AF69B00D24393 /* Assets.swift */,
+				FAF9E8B92805D25200C0D356 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		FAFF2B95280AF5D300D24393 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				FAFF2B98280AF69500D24393 /* Localizable.swift */,
+				FAFF2B96280AF5F900D24393 /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		FAFF2B9C280AF6A700D24393 /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				FAFF2B9D280AF6AD00D24393 /* Plist.swift */,
+			);
+			path = Plists;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +417,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAF9E8C12805D25200C0D356 /* Build configuration list for PBXNativeTarget "CombinePedProject" */;
 			buildPhases = (
+				44A726351C1855B801E4030D /* [CP] Check Pods Manifest.lock */,
+				FAFF2BA0280AF80200D24393 /* SwiftGen */,
 				FAF9E8A92805D24F00C0D356 /* Sources */,
 				FAF9E8AA2805D24F00C0D356 /* Frameworks */,
 				FAF9E8AB2805D24F00C0D356 /* Resources */,
+				AB583142F77C96D34B374D0F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,45 +471,115 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAF9E8BD2805D25200C0D356 /* LaunchScreen.storyboard in Resources */,
 				FAF9E8BA2805D25200C0D356 /* Assets.xcassets in Resources */,
-				FAF9E8B82805D24F00C0D356 /* Main.storyboard in Resources */,
+				FAFF2B97280AF5F900D24393 /* Localizable.strings in Resources */,
+				FAF9E8C82805D62F00C0D356 /* LaunchScreen.storyboard in Resources */,
+				FAFF2B93280AF51D00D24393 /* swiftgen.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44A726351C1855B801E4030D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CombinePedProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB583142F77C96D34B374D0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CombinePedProject/Pods-CombinePedProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CombinePedProject/Pods-CombinePedProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CombinePedProject/Pods-CombinePedProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAFF2BA0280AF80200D24393 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PROJECT_DIR}/SwiftGen/bin/swiftgen\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAF9E8A92805D24F00C0D356 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAF9E8B52805D24F00C0D356 /* ViewController.swift in Sources */,
+				FAFF2B9E280AF6AD00D24393 /* Plist.swift in Sources */,
+				FAF9E8E52806C92A00C0D356 /* ViewBuilderType.swift in Sources */,
+				FAF9E8F92806EAF200C0D356 /* StackViewBuilder.swift in Sources */,
+				FAF9E8FE2806EBF800C0D356 /* LabelBuilderType.swift in Sources */,
+				FAF9E9012806ED2100C0D356 /* LocalStoreManager.swift in Sources */,
+				FAFF2BA2280C17A500D24393 /* LaunchScreenViewModel.swift in Sources */,
+				FAF9E8F12806D7C100C0D356 /* TextFieldBuilderType.swift in Sources */,
+				FAF9E8EF2806D79800C0D356 /* TextFieldBuilder.swift in Sources */,
+				FAF9E8FC2806EBED00C0D356 /* LabelBuilder.swift in Sources */,
+				FAF9E8F32806D7F100C0D356 /* ProjectTextField.swift in Sources */,
+				FAF9E8D32805DB7300C0D356 /* TableBuilder.swift in Sources */,
+				FAF9E8CD2805D6C300C0D356 /* Coordinator.swift in Sources */,
+				FAF9E8CA2805D69900C0D356 /* AppCoordinator.swift in Sources */,
+				FAFF2B9B280AF69B00D24393 /* Assets.swift in Sources */,
 				FAF9E8B12805D24F00C0D356 /* AppDelegate.swift in Sources */,
+				FAF9E8DD2806C64D00C0D356 /* ImageViewBuilder.swift in Sources */,
+				FAF9E9102806F7B600C0D356 /* BaseViewController.swift in Sources */,
+				FAF9E8DB2806C4F200C0D356 /* ImageViewBuilderType.swift in Sources */,
+				FAF9E8D12805D7E900C0D356 /* TableBuilderType.swift in Sources */,
+				FAF9E90A2806F71E00C0D356 /* LaunchScreenCoordinator.swift in Sources */,
+				FAF9E8EC2806D5B900C0D356 /* UIButton+Extension.swift in Sources */,
+				FAF9E8D82805DDFD00C0D356 /* ProjectRefreshControl.swift in Sources */,
+				FAF9E90C2806F75A00C0D356 /* LaunchScreenViewController.swift in Sources */,
+				FAF9E8E82806CA8F00C0D356 /* ButtonBuilderType.swift in Sources */,
+				FAF9E8F72806EAC400C0D356 /* StackViewBuilderType.swift in Sources */,
+				FAFF2B99280AF69500D24393 /* Localizable.swift in Sources */,
+				FAF9E8E02806C77E00C0D356 /* UIView+Extension.swift in Sources */,
 				FAF9E8B32805D24F00C0D356 /* SceneDelegate.swift in Sources */,
+				FAF9E8E32806C91600C0D356 /* ViewBuilder.swift in Sources */,
+				FAF9E8EA2806CBEA00C0D356 /* ButtonBuilder.swift in Sources */,
+				FAFF2B91280AF41800D24393 /* LaunchScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		FAF9E8B62805D24F00C0D356 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAF9E8B72805D24F00C0D356 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FAF9E8BB2805D25200C0D356 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAF9E8BC2805D25200C0D356 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FAF9E8BF2805D25200C0D356 /* Debug */ = {
@@ -284,6 +700,7 @@
 		};
 		FAF9E8C22805D25200C0D356 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 901A11F82AC263909F45A4BC /* Pods-CombinePedProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,7 +711,6 @@
 				INFOPLIST_FILE = CombinePedProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -312,6 +728,7 @@
 		};
 		FAF9E8C32805D25200C0D356 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0D81A013033FF7676CE9FD7 /* Pods-CombinePedProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,7 +739,6 @@
 				INFOPLIST_FILE = CombinePedProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
